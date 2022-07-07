@@ -674,6 +674,7 @@ body {
      object-fit: contain;
   border-radius: 1.6rem;
   margin-right: 3.5rem;
+  box-shadow: 0 0 1.9rem #c7c4c4;
 }
 @media only screen and (max-width: 1200px) {
   .ideas__img {
