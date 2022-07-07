@@ -4,8 +4,7 @@
 }
 
 .hero {
-    @include container;
-    padding: 0 0 0 5.6rem;
+    @include container; 
     display: flex;
     align-items: center;
     justify-content: space-between;
