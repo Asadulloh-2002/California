@@ -1,0 +1,68 @@
+@mixin container {
+    width: 100%;
+    max-width: 1340px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin site-button($padding) {
+    padding: $padding;
+    border: 1px $black-color solid;
+    border-radius: 20rem;
+    color: $black-color ;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@mixin  main-titles {
+    font-family: $title-fonts;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 1.2;
+    text-align: center;
+    color: $black-color;
+    margin-bottom: 0.9rem;
+}
+
+@mixin  main-subtitles {
+    width: 100%;
+    max-width: 628px;
+    font-family: $title-fonts;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-align: center;
+    color: $black-color;
+}
+
+@mixin list-title {
+    font-family: $title-fonts;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.25;
+    color: $black-color;
+}
+
+
+@mixin responsive($breakpoint) {
+    @if($breakpoint == m-phone) {
+        @media only screen and (max-width: 440px) { @content }
+    };
+    @if($breakpoint == phone) {
+        @media only screen and (max-width: 576px) { @content }
+    };
+    @if($breakpoint == tables) {
+        @media only screen and (max-width: 768px) { @content }
+    };
+    @if($breakpoint == middle-table) {
+        @media only screen and (max-width: 885px) { @content }
+    };
+    @if($breakpoint == big-tables) {
+        @media only screen and (max-width: 993px) { @content }
+    };
+    @if($breakpoint == desktop) {
+        @media only screen and (max-width: 1200px) { @content }
+    };
+}

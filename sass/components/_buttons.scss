@@ -1,0 +1,53 @@
+%button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn {
+    @extend %button;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain
+    }
+}
+.cart-btn {
+    @extend %button;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain
+    }
+}
+
+.burger {
+    @include responsive(tables) {
+        display: block;
+    }
+    @extend %button;
+    display: none;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+%hover-btn {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: $white-color;
+}
+.hero__btn {
+    @include site-button(1.4rem 5.3rem);
+    &:hover {
+        @extend %hover-btn;
+    }
+    &:active {
+        opacity: 0.6;
+    }
+}
+.best__item-btn:hover {
+    @extend %hover-btn;
+}
