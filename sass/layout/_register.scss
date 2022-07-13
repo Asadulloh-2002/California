@@ -1,0 +1,28 @@
+.register {
+    margin-bottom: 1.8rem;
+    &__inner {
+        border-radius: 1.6rem;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        max-width: 935px;
+        background-color: $primary-color;
+        padding: 4.7rem 2rem 4.3rem;
+        text-align: center;
+    }
+    &__title {
+        @include main-titles;
+    }
+    &__text {
+        @include main-subtitles;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 1.4rem;
+    }
+    &__img {
+        width: 233px;
+        height: 200px;
+        object-fit: contain;
+        margin-bottom: 1.4rem;
+    }
+}
